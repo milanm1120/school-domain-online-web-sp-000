@@ -7,8 +7,8 @@ class School
    end
 
    def add_student(student_name, grade)
-     if roster[grade]
-        roster[grade] << student_name
+     if roster[grade]                     #creating a new key value (grade) for the hash
+        roster[grade] << student_name     #pushing the new value into the key 
      else
        roster[grade] = [student_name]
      end
